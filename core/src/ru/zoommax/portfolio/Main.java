@@ -118,7 +118,7 @@ public class Main extends ApplicationAdapter {
 				lr.addCloseButton();
 				lr.closeOnEscape();
 
-				lr.add(new LinkLabel("Резюме", "https://github.com/ZooMMaX/portfolio/blob/main/p.md")).growX().row();
+				lr.add(new LinkLabel("Посмотреть резюме", "https://github.com/ZooMMaX/portfolio/blob/main/p.md")).row();
 				lr.add(new VisTextButton("Сохранить в PDF", new ChangeListener() {
 					@Override
 					public void changed(ChangeEvent event, Actor actor) {
@@ -145,6 +145,7 @@ public class Main extends ApplicationAdapter {
 						stage.addActor(chooser.fadeIn());
 					}
 				})).growX().row();
+				Percent.size(lr, 10, 10);
 				Percent.pos(lr, SIDE.PARENTCENTER, null, 0,0);
 				stage.addActor(lr);
 			}
