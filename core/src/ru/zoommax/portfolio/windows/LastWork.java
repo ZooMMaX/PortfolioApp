@@ -29,7 +29,8 @@ public class LastWork extends VisWindow {
         cdekInfo.add(new VisLabel("Должность: "));
         cdekInfo.add(new VisLabel("системный администратор"));
         cdekInfo.add(new VisLabel("+7 (916) 686-53-03")).row();
-        cdekLogo.add(logo).maxSize(this.getWidth()/100f*logo.getWidth()/100f*7f, this.getHeight()/100f*logo.getHeight()/100f*7f);
+        cdekLogo.add(logo);
+        cdekLogo.add(new VisLabel("  "));
         cdekLogo.add(cdekInfo).row();
 
         VisTable job = new VisTable();

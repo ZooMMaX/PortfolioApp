@@ -29,17 +29,6 @@ public class Proj2 extends VisWindow {
         passport.add(new LinkLabel("Google Play", "https://play.google.com/store/apps/details?id=app.greywebs.vpn")).row();
         passport.addSeparator();
 
-
-        GS.setProj2Text("VPN для мобильных устройств на базе IOS и Android.\n\n" +
-                "Роль: менеджера проекта.\n" +
-                "В мои обязанности входит:\n" +
-                "   - создание ТЗ для аутсорсных программистов;\n" +
-                "   - описание процессов взаимодействия;\n" +
-                "   - руководство и курирование процессов производства;\n" +
-                "   - подбор и тестирование серверов для VPN;\n" +
-                "   - настройка и поддержка DNS серверов.");
-
-
         VisTextArea textArea = new VisTextArea(GS.getProj2Text());
         textArea.setReadOnly(true);
         textArea.setPrefRows(textArea.getPrefHeight());
